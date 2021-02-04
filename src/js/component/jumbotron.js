@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import proTypes from "prop-types";
+import PropTypes from "prop-types";
 
-export function Jumbotron() {
+export function Jumbotron(props) {
 	let [contador, setContador] = useState(0);
 
 	setInterval(function reloj() {
@@ -11,9 +11,8 @@ export function Jumbotron() {
 	return (
 		<div className="jumbotron">
 			<div className="encima">
-				<h1 className="display-4">Reloj</h1>
 				<p className="lead">
-					00
+					<i className="far fa-clock" />
 					{contador}
 				</p>
 			</div>
@@ -21,3 +20,6 @@ export function Jumbotron() {
 		</div>
 	);
 }
+Jumbotron.propTypes = {
+	seconds: PropTypes.number
+};

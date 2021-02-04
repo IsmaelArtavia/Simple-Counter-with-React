@@ -13,4 +13,4 @@ import { Home } from "./component/home.js";
 import { Jumbotron } from "./component/jumbotron.js";
 
 //render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+ReactDOM.render(<Home seconds={3434} />, document.querySelector("#app"));
