@@ -9,14 +9,18 @@ export function Jumbotron(props) {
 	}, 1000);
 
 	return (
-		<div className="jumbotron">
-			<div className="encima">
-				<p className="lead">
-					<i className="far fa-clock" />
-					{contador}
-				</p>
+		<div className="Padre">
+			<div className="hijo">
+				<div className="jumbotron">
+					<div className="encima">
+						<p className="lead">
+							<i className="far fa-clock" />
+							{contador}
+						</p>
+					</div>
+					<div className="text-center" />
+				</div>
 			</div>
-			<div className="text-center" />
 		</div>
 	);
 }
